@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pinter Armin, Pirik Mihaly">
+    <title>Programozási alapok</title>
+    <link rel="shortcut icon" href="Pictures/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Programozáselmélet</h1>
+        <nav>
+            <a class="nonactive active" id="navkezdo" href="#">Kezdőlap</a>
+            <a class="nonactive" id="navalgoritmus" href="#">Algoritmus</a>
+            <a class="nonactive" id="navtetelek" href="#">Programozási tételek</a>
+            <a class="nonactive" id="navnyelvek" href="#">Programozási nyelvek</a>
+            </nav>
+    </header>
+
+    <main><p>Ezen a weboldan röviden ismertetve vannak a programozással kapcsolatos alapfogalmak, ismeretek. Többek között az algoritmusokról, adattípusokról, programozási tételek és az egyes programozási nyelvek rövid imsertetéséről olvashatsz. Egyes helyeken részletesebb magyarázatért látogss el a hozzá fűzött oldalakra.</p>
+
+        <p>A <dfn>program</dfn> olyan megengedett utasítások sorozata, amelyet szeretnénk, hogy a számítógépünk végrehajtson.</p>
+    
+        <h2>Programkészítés folyamata</h2>
+    
+        <p>A programkészítés folyamata általában egy többlépcsős feladat, főleg boynolultabb programok megírásánál.</p>
+        <ol>
+            <li><strong>Specifikáció</strong>: A legelső lépésben adjuk meg a bemenő, kimenő adatokat, és a hozzájuk tartozó kikötéseket (előfeltétel, utófeltétel). Tehát meghatározzuk a kezdő adatokat, értékhalmazukat, és az ebből következő kimenő adatokat, értékhalmazukat. Ezt a lépést röviden specifikációnak nevezzük.</li>
+            <li><strong>Tervezés</strong>: A tervezésnél választunk ki számos fontos dolgot. A fejlesztői környezetet amin szeretnénk írni a programunkat, és a programozási nyelvet amiben szeretnénk kódolni. Utolsósorban a legfontosabb a megfelelő algoritmus generlásása.</li>
+            <li><strong>Kódolás</strong>: Az általunk megválasztott programozási nyelven az algoritmusunkat követve, kódoljuk a programot.</li>
+            <li><strong>Tesztelés</strong>: Teszteljük a programot, hogy minden esetben működik - e, feltárjuk a lehetséges hibákat.</li>
+            <li><strong>Hibakeresés, hibajavítás</strong>: A teszteléskor talált, feltélezett lehetséges hibákat megpróbáljuk feltárni, feltérképezni, hol lehet, majd feltárjuk a lehetséges okokat és kijavítani a hibákat.</li>
+            <li><strong>Minőségvizsgálat, hatékonyság</strong>: Megvizsgáljuk, hogy a pogramunk forráskódja egyszerűbben is megholható. Jobbítható - e maga a program? Hogyan?</li>
+            <li><strong>Dokumentáció</strong>: Ebben a lépésben készítjük el a felhasználó számára, hogy hogyan lehet használni a programot, mire jó.</li>
+            <li><strong>Használat, karbantartás</strong>: Mint minden alkalmazást, szoftvert, programot az idők folyam folyamatosan frissíteni kell biztonsági, és technikai okok miatt, ugyanúgy ez nekünk is a felelősségünk, hogy lépést tartsunk az idővel, és folyamatosan frissítsük, karbantartsuk a programunkat.</li>
+        </ol>
+        <h2>Adattípusok</h2>
+    
+        <p>Egy <dfn>adattípus</dfn> az adatok azon halmazát jelöli ki, mely meghatározza az értelmezési tartományukat és a rajtuk elvégezhető műveleteket.</p>
+        <p><dfn>Elemi típus</dfn>: Egy adattípus lehet elemi, melyet nem lehet tovább szétbontani.</p>
+                <ul>
+                    <li><dfn>Konstans</dfn>: Az értéke, állapota a program futása során nem változhat.</li>
+                    <li><dfn>Változó</dfn>: A változó a neve is arra utal, hogy egy olyan adatot tároljunk benne ami a program futtatása során megváltoztathatja állapotát, értékét.</li>
+                    <li><dfn>Egész típus</dfn>: Az egész számok és természetes számok halmaza. Aritmetikai és logikai műveletek végezhetők rajta, és a relációk.</li>
+                    <li><dfn>Valós típus</dfn>: Ez a racionális számok halmaza. Aritmetikai és logikai műveletek végezhetők rajta, és a relációk.</li>
+                    <li><dfn>Logikai típus</dfn>: Ez a hamis, vagy az igaz értékeket tartalmazhatja. A logikai műveletek végezhetők rajta, valamint csak az = és a nem = relációk.</li>
+                    <li><dfn>Karakter típus</dfn>: Az <abbr title="American Standard Code for Information Interchange">ASCII</abbr> kódtáblában tartalmazó karakterek halmaza. Értelemszerűen csak a rá értelmes műveletek végezhetők rajta.</li>
+                </ul>
+        <p><dfn>Összetett típus</dfn>: Az összetett típusok, az elemi típsuokból épülnek, így több, egyszerre más típusú adatot is tartalmazhatnak. Példál: rekord, halmaz, lista...</p></main>
+
+    <section id="kezdolap" hidden><p>Ezen a weboldan röviden ismertetve vannak a programozással kapcsolatos alapfogalmak, ismeretek. Többek között az algoritmusokról, adattípusokról, programozási tételek és az egyes programozási nyelvek rövid imsertetéséről olvashatsz. Egyes helyeken részletesebb magyarázatért látogss el a hozzá fűzött oldalakra.</p>
+
+        <p>A <dfn>program</dfn> olyan megengedett utasítások sorozata, amelyet szeretnénk, hogy a számítógépünk végrehajtson.</p>
+    
+        <h2>Programkészítés folyamata</h2>
+    
+        <p>A programkészítés folyamata általában egy többlépcsős feladat, főleg boynolultabb programok megírásánál.</p>
+        <ol>
+            <li><strong>Specifikáció</strong>: A legelső lépésben adjuk meg a bemenő, kimenő adatokat, és a hozzájuk tartozó kikötéseket (előfeltétel, utófeltétel). Tehát meghatározzuk a kezdő adatokat, értékhalmazukat, és az ebből következő kimenő adatokat, értékhalmazukat. Ezt a lépést röviden specifikációnak nevezzük.</li>
+            <li><strong>Tervezés</strong>: A tervezésnél választunk ki számos fontos dolgot. A fejlesztői környezetet amin szeretnénk írni a programunkat, és a programozási nyelvet amiben szeretnénk kódolni. Utolsósorban a legfontosabb a megfelelő algoritmus generlásása.</li>
+            <li><strong>Kódolás</strong>: Az általunk megválasztott programozási nyelven az algoritmusunkat követve, kódoljuk a programot.</li>
+            <li><strong>Tesztelés</strong>: Teszteljük a programot, hogy minden esetben működik - e, feltárjuk a lehetséges hibákat.</li>
+            <li><strong>Hibakeresés, hibajavítás</strong>: A teszteléskor talált, feltélezett lehetséges hibákat megpróbáljuk feltárni, feltérképezni, hol lehet, majd feltárjuk a lehetséges okokat és kijavítani a hibákat.</li>
+            <li><strong>Minőségvizsgálat, hatékonyság</strong>: Megvizsgáljuk, hogy a pogramunk forráskódja egyszerűbben is megholható. Jobbítható - e maga a program? Hogyan?</li>
+            <li><strong>Dokumentáció</strong>: Ebben a lépésben készítjük el a felhasználó számára, hogy hogyan lehet használni a programot, mire jó.</li>
+            <li><strong>Használat, karbantartás</strong>: Mint minden alkalmazást, szoftvert, programot az idők folyam folyamatosan frissíteni kell biztonsági, és technikai okok miatt, ugyanúgy ez nekünk is a felelősségünk, hogy lépést tartsunk az idővel, és folyamatosan frissítsük, karbantartsuk a programunkat.</li>
+        </ol>
+        <h2>Adattípusok</h2>
+    
+        <p>Egy <dfn>adattípus</dfn> az adatok azon halmazát jelöli ki, mely meghatározza az értelmezési tartományukat és a rajtuk elvégezhető műveleteket.</p>
+        <p><dfn>Elemi típus</dfn>: Egy adattípus lehet elemi, melyet nem lehet tovább szétbontani.</p>
+                <ul>
+                    <li><dfn>Konstans</dfn>: Az értéke, állapota a program futása során nem változhat.</li>
+                    <li><dfn>Változó</dfn>: A változó a neve is arra utal, hogy egy olyan adatot tároljunk benne ami a program futtatása során megváltoztathatja állapotát, értékét.</li>
+                    <li><dfn>Egész típus</dfn>: Az egész számok és természetes számok halmaza. Aritmetikai és logikai műveletek végezhetők rajta, és a relációk.</li>
+                    <li><dfn>Valós típus</dfn>: Ez a racionális számok halmaza. Aritmetikai és logikai műveletek végezhetők rajta, és a relációk.</li>
+                    <li><dfn>Logikai típus</dfn>: Ez a hamis, vagy az igaz értékeket tartalmazhatja. A logikai műveletek végezhetők rajta, valamint csak az = és a nem = relációk.</li>
+                    <li><dfn>Karakter típus</dfn>: Az <abbr title="American Standard Code for Information Interchange">ASCII</abbr> kódtáblában tartalmazó karakterek halmaza. Értelemszerűen csak a rá értelmes műveletek végezhetők rajta.</li>
+                </ul>
+        <p><dfn>Összetett típus</dfn>: Az összetett típusok, az elemi típsuokból épülnek, így több, egyszerre más típusú adatot is tartalmazhatnak. Példál: rekord, halmaz, lista...</p></section>
+    <section id="algoritmus" hidden><p>A programozáselméletben, az <dfn>algoritmus</dfn> vagy eljárás alatt olyan absztrakt, programozási nyelvtől független utásítások megengedett sorozatát értjük, melyet követünk a kódolás közben. Az algoritmus olyan mint egy recep főzéskor.</p>
+    
+        <h2>Jellemzői</h2>
+        <ul><li>Legrövidebb</li>
+        <li>Leghatékonyabb</li>
+        <li>Programfüggetlen</li></ul>
+    
+        <p>Az algoritmus megalkotása során, az egyes tevékenyésgeket csoportosítani tudjuk, mivel nyelvtől független tulajdonsága miatt, a felesleges tevékenységeket ezzel elhadjuk.</p>
+    
+        <h2>Elemi tevékenységek</h2>
+    
+        <p>Ezek a program által azonnal véhgrehajtható műveletek. Három alapvető van közöttük, ezek a beolvasás, kiírás, értékadás. De például két szám összeadása is elemi tevékenység.</p>
+        
+        <h2>Vezérlőtevékenységek</h2>
+    
+        <p>Ezekkel vezérelhetjük, hogy a programunk milyen sorrendben, és hogyan hatjsa végre a tevékenységeket.</p>
+    <ul>
+        <li><dfn>Szekvencia</dfn>: Egymás után végrehatja a tevékenységeket.</li>
+        <li><dfn>Szelekció vagy elágazás</dfn>: Feltételtől függően szelektál, azaz választ, és azt a tevékenyésget hatja végre amelyik felétele igaz. Feltételektől függően beszélhetünk, kétszeres, háromszoros, többszörös szelekcióról.</li>
+        <li><dfn>Ciklus</dfn>: Egy tevékenység többszöri végrhajtása. A ciklusoknak többféle válozata lehet. Van Elöltesztelő-, hátultesztelő ciklus, valamint növekményes-, és csökkenő ciklus.</li>
+        <li><dfn>Alprogram</dfn>: Ez egy összetett tevékenység. Gyakorlati céljából abban jó, hogy nek kelljen a forráskódban többször ugyanazt a kódot ismételgetni.</li>
+    </ul>    
+        <h2>Algoritmusleíró eszközök</h2>
+    
+        <p>Az algoritmusoknak többfajta leíró eszközei vannak. Ezekkel valósíthatjuk meg az algoritmusunkat. A leggyakrabban használtak:</p>
+    <ul>
+        <li><dfn>Folyamatábra</dfn>: Geometria alakzatokkal szemlélteti az egyes tevékenységeket, a nyíl pedig az irányt jelöli, tehát, hogy milyen irányban fut a program.</li>
+        <img src="Pictures/Flowchart Diagram.png" alt="Folyamatábra elemei" alt="Folyamatábra elemei">
+        <li><dfn>Struktogram</dfn>: Hasonló a folyamatábrához, viszont itt téglalapok jelölnek mindent, és a további tevékenységek is egymásba ágyazott téglalapok lesznek.</li>
+        <li><dfn>Mondatszerű leírás</dfn>: Ez már az előzőekhez hasonlóan szöveges leírást használ. Az emberi természetes nyelvet használja az algoritmus leírására. Törekedni kell, az egyértelműségre, pontosságra, tömörésgre.</li>
+        <li><dfn>Pszeudokód</dfn>: A forráskódhoz hasonlítható, ötvözi annak elemeit és a mondatszerű leírást.</li>
+    </ul></section>
+    <section id="tetelek" hidden><p>A <dfn>programozási tételek</dfn> olyan absztrakt, általános típusfeladatoknak az algoritmusa, melyek majdnem minden esetben használhatók.</p>
+            <div id="tetelekcontainer"><div class="tetelekbox"><dfn>Összegzés</dfn>: Adott tulajdonsággal rendelkező elemek értékének összege.
+            <code>
+            <pre>
+    START
+    összeg=0
+    X=&#8461<sup>N</sup>
+    T:X &rarr; &#120131
+    Ciklus i=1-től N-ig
+        Ha T(X<sub>i</sub>) igaz
+            akkor összeg=összeg+X<sub>i</sub>
+        Ciklus vége
+    STOP</pre>
+            </code></div>
+            <div class="tetelekbox"><dfn>Megszámolás</dfn>: Adott tulajdonsággal rendlekező elemek darabszámának a meghatározása, tehát, hogy hány van belőlük.
+            <code>
+            <pre>
+    START
+    db=0
+    X=&#8461<sup>N</sup>
+    T:X &rarr; &#120131
+    Ciklus i=1-től N-ig
+        Ha T(X<sub>i</sub>) igaz
+            akkor db=db+1
+        Ciklus vége
+    STOP</pre>
+            </code></div>
+            <div class="tetelekbox"><dfn>Maximum- és minimum kiválasztás</dfn>: Adatok közül, a legnagyobb, illetve a legkisebb kiválasztása.
+            <code>
+            <pre>
+    START
+    X=&#8461<sup>N</sup>
+    maxÉrt=X<sub>1</sub>, maxIndex=1
+    Ciklus i=1-től N-ig
+        Ha maxÉrt>X<sub>i</sub>
+            akkor maxÉrt=X<sub>i</sub>, maxIndex=i
+        Ciklus vége
+    STOP</pre>
+            </code></div>
+            <div class="tetelekbox"><dfn>Eldöntés</dfn>: Eldöntjük, hogy van - e az adatok között adott tulajdonságú elem.
+            <code>
+            <pre>
+    START
+    X=&#8461<sup>N</sup>
+    T:X &rarr; &#120131
+    van=<samp>False</samp>
+    Ciklus amíg i&#8804N és nem van
+        Ha T(X<sub>i</sub>)
+            akkor van=<samp>True</samp>
+        Ciklus vége
+    STOP</pre>
+            </code></div>
+            <div class="tetelekbox"><dfn>Kiválasztás</dfn>: Hasonló kiválasztáshoz, csak itt tudjuk, hogy létezik egy ilyen elem, és ezt szeretnénk kiválasztani.
+            <code>
+            <pre>
+    START
+    X=&#8461<sup>N</sup>
+    T:X &rarr; &#120131
+    Ciklus amíg nem T(X<sub>i</sub>)
+            Ha T(X<sub>i</sub>)
+                akkor Index=i, Ért=X<sub>i</sub>
+        Ciklus vége
+    STOP</pre>
+            </code></div>
+            <div class="tetelekbox"><dfn>Keresés</dfn>: Az eldöntésből és a kiválasztásból tevődik össze. Megkeressük, hogy van - e ilyen elem, ha van akkor végrehatjuk a kiválasztás algoritmusát.
+            <code>
+            <pre>
+    START
+    X=&#8461<sup>N</sup>
+    T:X &rarr; &#120131
+    van=False
+    Ciklus amíg i&#8804N és nem van
+        Ha T(X<sub>i</sub>)
+                akkor van=<samp>True</samp>
+        Ciklus vége
+    Ha van
+        akkor Ciklus amíg nem T(X<sub>i</sub>)
+                Ha T(X<sub>i</sub>)
+                    akkor Index=i, Ért=X<sub>i</sub>
+            Ciklus vége
+    STOP</pre>
+            </code></div>
+        </div></section>
+    <section id="nyelvek" hidden><p>Ugyanúgy mint a természetes nyelveknél, az idők folyamán nagyon sok programozási nyelv alakult ki. Amint a neve is sugallja, egy programozási nyelv egy adott programnak a forráskódjának a nyelvét értjük, amiben a program fejlesztője írta a programot. A programozási nyelveket is nagyon sok féle szempont alapján lehet csoportosítani. A két fő típus az alacsonyszíntű, és a magas-szintű nyelvek. Egy nyelv alacson szintű, ha a programozás közben jelentősen hardveres, és nem szoftveresen valósítjuk meg a programot. Napjainkban ezek a nyelvek már elavultak, és a helyüket átvetták a magas-szintű nyelvek, a könnyeb programozás érdekében. A magas-szintű nyelveknél nincs szükség hardveres beavatkozásra, a kódolás teljesen szoftveresen valósul meg. A magas-szintű nyelveknek a leggyakoribb típusai az Objektum Orientált, prototípus alapúak, és a szkript nyelvek, de vannak grafikai típusuak, melyekkel egy grafikus felületen is tudunk kódolni. Ezenkívül még ismeretes a struktúrált, és procedurális nyelvek.</p>
+        <table>
+            <tr><td colspan="4">Nyelvek</td></tr>
+            <tr><td colspan="2">Természetes</td><td colspan="2">Mesterséges</td></tr>
+            <tr><td>Lekérdező</td>
+            <td>Dokumentumleíró</td>
+            <td colspan="2">Programozási</td></tr>
+            <tr><td style="border:0"></td>
+            <td style="border:0"></td>
+            <td>Alacsony szintű</td>
+            <td>Magas szintű</td></tr>
+        </table>
+        <p>A leggyakrabban használt programozási nyelvek</p>
+        <h2><img src="Pictures/Python.png" alt="Python logo" title="Python logo"> Python</h2>
+        <p>A Python egy magas-szintű általános célú programozáis nyelv. Szintaxisa, és a típusfüggetlensége miatt ajánlott kezdő programozóknak.</p>
+        <h2><img src="Pictures/JavaScript.png" title="JavaScript logo" alt="JavaScript logo"> Javascript</h2>
+        <p>A Javascript prototípus alapú szkript nyelv, viszont támogatja az objektum orientáltságot. Javascript az alap szkript nyelve a Weboldalaknak, 2022 - es adatok alapján majdhogynem a weboldalak 99% - a használja a weboldalán a JavaScriptet. Ennek következtében ma már a Javascript az alapértelmezett szkript nyelv a HTML oldalaknak. Lentebb láthatsz is egy példát, a Javascriptre, de nyilván ennél jóval többet meg lehet valósítani.
+            <form>
+                <p>Ha beírod a számok, a Javascript kiszámítja neked az átlagsebességet.</p>
+                A megtett út:
+                <input type="number" min="0" title="Ide írd a megtett utat méterben" placeholder="Ide írd a megtett utat méterben" name="Megtett út" id="ut" oninput="szamitas()">
+                Eltelt idő:
+                <input type="number" min="0" title="Ide írd az eltelt időt másodpercben" placeholder="Ide írd az eltelt időt másodpercben" name="Eltelt idő" id="ido" oninput="szamitas()"><br>
+                Átlagsebesség:
+                <input type="number" title="Eredmény" placeholder="m/s" name="result" id="eredmeny" readonly>
+            </form></p>
+            <h2><img src="Pictures/C.png" title="C nyelvek logo" alt="C nyelvek logo"> C tipusú nyelvek(C#,C++,C)</h2>
+            <p>A C tipusú nyelvek nagyon erősen tipusos nyelvek, nagy részük pedig objektum orientált.</p>
+    </section>
+    <footer>
+            <p>Részletesebben:<br><a href="https://tudasbazis.sulinet.hu/hu/szakkepzes/informatika/programozaselmelet">https://tudasbazis.sulinet.hu/hu/szakkepzes/informatika/programozaselmelet</a><br><a href="https://szit.hu/doku.php?id=oktatas:programozas:programozas_elmelet:tananyag">https://szit.hu/doku.php?id=oktatas:programozas:programozas_elmelet:tananyag</a></p>
+    </footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

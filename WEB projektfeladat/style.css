@@ -1,0 +1,29 @@
+header{position:sticky;top:0}
+main{margin: 0 8px 0 8px}
+h2>img{height:1em;width:1em}
+ul>img{width:100%}
+nav{display:flex;flex-flow:row wrap;justify-content:space-between}
+h1{text-align:center;color:white;margin:0;padding-block: 0.67em;
+    background:url(Pictures/headerbackgroundimage.jpg) no-repeat;background-size:cover}
+nav>a{color:white;text-decoration:none;font-size:150%;background-color:black;opacity:75%;text-align:center;
+    width:20vw;border-radius:10px}
+nav>a:hover{color:grey;font-weight:bold}
+body{margin:0;background:url(Pictures/background.png) fixed no-repeat;background-size:cover;font:large sans-serif}
+*{box-sizing:border-box}
+p{text-align:justify}
+dfn{font-weight:bold}
+ul{list-style: square}
+h2{border-bottom:solid 2px mediumblue;color:mediumblue}
+code{font-size:x-large}
+#tetelekcontainer{display:flex;flex-flow:row wrap}
+.tetelekbox{overflow:auto;width:50%}
+nav>a.active{font-weight:bold;color:grey}
+footer{background:black;box-shadow:0 -10px 10px black;color:white;opacity:60%;overflow-wrap:break-word}
+footer>p{margin:0;margin-inline:8px}
+footer a{text-decoration:none;color:inherit}
+footer a:hover{color:grey}
+td{border:1px solid black;text-align:center}
+@media only screen and (max-width:843px)
+{nav{flex-flow:column wrap;align-items:center}header{position: static;top:100%}nav>a{width:70vw}ul>img{height:35vh}
+#tetelekcontainer{flex-flow:column}.tetelekbox{width:100%}
+}
