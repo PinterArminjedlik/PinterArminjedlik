@@ -25,5 +25,6 @@ footer a:hover{color:grey}
 td{border:1px solid black;text-align:center}
 @media only screen and (max-width:843px)
 {nav{flex-flow:column wrap;align-items:center}header{position: static;top:100%}nav>a{width:70vw}ul>img{height:35vh}
-#tetelekcontainer{flex-flow:column}.tetelekbox{width:100%}
+#tetelekcontainer{flex-flow:column}.tetelekbox{width:100%}#cimkep{visibility:hidden}
 }
+#cimkep{width:1em;height:1em;max-width:25%}
